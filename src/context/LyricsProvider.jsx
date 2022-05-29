@@ -18,7 +18,6 @@ const LyricsProvider = ({ children }) => {
             const { data } = await axios(url)
             setLyric(data.lyrics)
             //We hide alert only if the artist/song are correct
-            // TEST MERGE FROM DEV BRANCH
             setAlert('')
         } catch (error) {
             setAlert('Song not found')
